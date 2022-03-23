@@ -2,7 +2,7 @@
   <div class="book_card">
     <div class="book_base">
       <div class="book_pic">
-        <img :src="cover" :alt="title" />
+        <img :src="cover" :alt="title" @error="loadDefault" />
       </div>
       <div class="book_text">
         <div class="book_title">
@@ -38,10 +38,10 @@ export default {
     'lang',
     'id',
   ],
-  data() {
-    return {
-      hover: false,
-    }
+  methods: {
+    loadDefault(e) {
+      e.target.src = require('@/assets/img/default-cover.jpg')
+    },
   },
   filters: {
     truncate: function (text, length, suffix) {

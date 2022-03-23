@@ -29,8 +29,8 @@
               >
             </p>
             <p>
-              <strong>Dependencies to be installed:</strong> axios, vue-router,
-              sass
+              <strong>Dependencies to be installed:</strong> express, axios,
+              vue-router, sass
             </p>
           </div>
           <router-link to="/" exact

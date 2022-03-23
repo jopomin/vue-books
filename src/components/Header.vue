@@ -8,7 +8,7 @@
           </router-link>
         </a>
         <ul class="header_menu">
-          <li><router-link to="/" exact>Bookstore</router-link></li>
+          <li><router-link to="/" exact>BookStore</router-link></li>
           <li>
             <router-link to="/notes" exact>Notes</router-link>
           </li>

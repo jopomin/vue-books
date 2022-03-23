@@ -9,7 +9,7 @@
       </div>
       <div class="bd_content">
         <div class="bd_pic">
-          <img :src="book.imageLink" :alt="book.title" />
+          <img :src="book.imageLink" :alt="book.title" @error="loadDefault" />
         </div>
         <div class="bd_info">
           <div class="bd_info_text">
@@ -55,6 +55,11 @@ export default {
       id: this.$route.params.book,
       book: {},
     }
+  },
+  methods: {
+    loadDefault(e) {
+      e.target.src = require('@/assets/img/default-cover.jpg')
+    },
   },
   created() {
     this.axios.get(this.books_url + '/' + this.id).then((response) => {
