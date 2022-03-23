@@ -1,0 +1,69 @@
+@media screen and (min-width: 576px) {
+  .general_container {
+    width: 570px;
+  }
+  .book_card:nth-child(2n + 1) {
+    margin: 0 10px 10px 0;
+  }
+
+  .header_mobile_logo {
+    display: none;
+  }
+
+  #header_mobile_burger {
+    display: none;
+  }
+
+  .header_logo {
+    display: block;
+  }
+
+  .header_menu {
+    display: flex;
+  }
+
+  #menu_mobile_list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .doc_pic,
+  .bd_pic {
+    display: block;
+  }
+
+  .bd_info,
+  .doc_info {
+    width: calc(100% - 200px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .general_container {
+    width: 860px;
+  }
+
+  .book_card {
+    margin: 0 10px 10px 0;
+  }
+
+  .book_card:nth-child(3n + 3) {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .general_container {
+    width: 1150px;
+  }
+
+  .book_card,
+  .book_card:nth-child(3n + 3) {
+    margin: 0 10px 10px 0;
+  }
+
+  .book_card:nth-child(4n + 4) {
+    margin: 0 0 10px 0;
+  }
+}

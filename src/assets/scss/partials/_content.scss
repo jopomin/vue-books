@@ -1,0 +1,220 @@
+main {
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+  background: var(--secondary-bg-color);
+}
+
+.main_header {
+  @include flex_cen_cen;
+  margin: 30px 0;
+}
+
+.bookstore_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book_card {
+  position: relative;
+  height: 280px;
+  width: 280px;
+  background: var(--main-bg-color);
+  outline: 1px solid var(--primary-color);
+  padding: 20px;
+  margin: 0 0 10px 0;
+}
+
+.book_base {
+  cursor: pointer;
+}
+
+.book_pic {
+  height: 150px;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  @include flex_cen_cen;
+}
+
+.book_pic img {
+  height: 100%;
+}
+
+.book_text {
+  height: 80px;
+}
+
+.book_title {
+  height: 20px;
+}
+
+.book_title h2 {
+  font-size: 15px !important;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.book_author {
+  height: 15px;
+  margin: 0 0 15px 0;
+}
+
+.book_author p {
+  font-size: 13px !important;
+  color: var(--primary-color);
+}
+
+.book_details_cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book_details_cta p {
+  display: inline-block;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  background: var(--secondary-color);
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.book_year,
+.book_pages {
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+.book_tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 400;
+  display: flex;
+}
+
+.book_tag_number {
+  @include flex_cen_cen;
+  height: 25px;
+  padding: 0 8px;
+  background: var(--secondary-color);
+  color: var(--secondary-text-color);
+}
+
+.book_tag_number p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.book_tag_triangle {
+  border-right: 10px solid transparent;
+  border-top: 25px solid var(--secondary-color);
+  height: 0;
+  width: 0;
+}
+
+.view_info {
+  margin: 0 0 25px 0;
+}
+
+.view_title {
+  color: var(--secondary-color);
+  vertical-align: middle;
+  font-size: 36px;
+}
+
+.doc_info,
+.bd_info {
+  @include flex_beet_start_col;
+}
+
+.back_home {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 15px;
+  vertical-align: middle;
+  background: var(--primary-color);
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 20px 0 0 0;
+}
+
+.view_description {
+  color: var(--secondary-color);
+  font-size: 18px;
+}
+
+.bd_content,
+.doc_content {
+  display: flex;
+}
+
+.bd_pic {
+  display: none;
+  width: 170px;
+  height: auto;
+  margin: 0 30px 0px 0;
+}
+
+.bd_pic img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.bd_info {
+  width: 100%;
+}
+
+.bd_text_cont {
+  display: flex;
+  align-items: baseline;
+  margin: 0 0 15px 0;
+}
+
+.bd_text_cont h3 {
+  color: var(--primary-color);
+  margin: 0 7px 0 0;
+}
+
+.bd_text_cont p {
+  color: var(--secondary-color);
+}
+
+#bd_abstract {
+  display: block;
+}
+
+#bd_abstract h3 {
+  margin: 0 0 7px 0;
+}
+
+.doc_pic {
+  display: none;
+  width: 170px;
+  height: auto;
+  margin: 0 30px 0px 0;
+}
+
+.doc_pic img {
+  width: 100%;
+  height: auto;
+}
+
+.doc_info {
+  width: 100%;
+}
+
+.doc_info_text p:first-child {
+  margin: 0 0 15px 0;
+}
+
+.doc_info_text a {
+  color: var(--primary-color);
+}

@@ -1,0 +1,78 @@
+@mixin flex_cen_cen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex_cen_cen_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex_beet_cen_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex_beet_start_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin flex_beet_cen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex_cen_beet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex_st_cen {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex_cen_st {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex_end_cen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin flex_cen_end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@mixin img_round_cont {
+  border-radius: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+@mixin cover_imgs {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@mixin user_name {
+  font-size: 14px;
+  font-weight: 700;
+  color: $dark-grey;
+}
