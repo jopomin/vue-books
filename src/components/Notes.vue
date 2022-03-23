@@ -28,6 +28,10 @@
                 ></strong
               >
             </p>
+            <p>
+              <strong>Dependencies to be installed:</strong> axios, vue-router,
+              sass
+            </p>
           </div>
           <router-link to="/" exact
             ><p class="back_home">Back to BookStore</p></router-link

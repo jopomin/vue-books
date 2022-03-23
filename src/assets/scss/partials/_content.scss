@@ -211,7 +211,11 @@ main {
   width: 100%;
 }
 
-.doc_info_text p:first-child {
+.doc_info_text p {
+  color: var(--secondary-color);
+}
+
+.doc_info_text p:not(:last-child) {
   margin: 0 0 15px 0;
 }
 
