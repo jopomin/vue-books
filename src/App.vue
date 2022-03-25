@@ -6,7 +6,8 @@
         <div class="main_container">
           <router-view>
             <BookStore />
-            <Notes />
+            <Specs />
+            <About />
           </router-view>
         </div>
       </div>
@@ -18,7 +19,8 @@
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import BookStore from './components/BookStore.vue'
-import Notes from './components/Notes.vue'
+import About from './components/About.vue'
+import Specs from './components/Specs.vue'
 
 export default {
   name: 'App',
@@ -26,7 +28,8 @@ export default {
     Header,
     Footer,
     BookStore,
-    Notes,
+    About,
+    Specs,
   },
 }
 </script>

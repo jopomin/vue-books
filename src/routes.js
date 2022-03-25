@@ -1,9 +1,11 @@
 import BookStore from './components/BookStore.vue'
-import Notes from './components/Notes.vue'
+import About from './components/About.vue'
+import Specs from './components/Specs.vue'
 import BookDetails from './components/BookDetails.vue'
 
 export default [
   { path: '/', component: BookStore },
-  { path: '/notes', component: Notes },
+  { path: '/about', component: About },
+  { path: '/specs', component: Specs },
   { path: '/:book', component: BookDetails },
 ]
